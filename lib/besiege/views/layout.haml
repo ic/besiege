@@ -4,7 +4,11 @@
   %head
     %title
       Report - Besiege
+    :javascript
+      var reload = function() { window.location.reload(true) };
   %body
     %h1
       Report
     = yield
+    %button{id: :reload, onClick: 'reload()'}
+      New Report
