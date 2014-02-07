@@ -43,4 +43,5 @@ See Also
 * [Micro Army](https://github.com/j2labs/microarmy): Deploy N AWS micro instances and launch coordinated Siege against web servers.
 * [siege.js](https://github.com/kissjs/siege.js): Browser-based HTTP benchmarking.
 * [Unofficial Siege on Github](https://github.com/tail/siege): Unofficial mirror of [Joe Dog's Siege](http://www.joedog.org/JoeDog/Siege).
-* And of course, [Joe Dog's Siege](http://www.joedog.org/JoeDog/Siege).
+* Of course, [Joe Dog's Siege](http://www.joedog.org/JoeDog/Siege).
+* [Docker installer](https://github.com/ic/docker-besiege)
