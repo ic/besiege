@@ -15,7 +15,14 @@ module Besiege
     end
 
     post '/load' do
-      @url, @report = siege params[:url]
+      url = params[:url]
+
+      if url.nil? or url.empty?
+        @error = "Please input a URL."
+        halt 400, haml(:index)
+      end
+
+      @url, @report = siege url
       haml :report
     end
 
