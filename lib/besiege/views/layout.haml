@@ -9,10 +9,7 @@
   %body
     %h1
       Report
-    %button{id: 'Reload >', onClick: 'reload()'}
-      Reload
-    = yield
-    %hr
     %form{action: '/load', method: :post}
       %input{type: :text, name: :url}
       %input{type: :submit, value: 'Test'}
+    = yield

@@ -10,9 +10,8 @@ module Besiege
       set :haml, :format => :html5
     end
 
-    get '/*' do
-      @url, @report = siege params[:splat].first
-      haml :report
+    get '/' do
+      haml :index
     end
 
     post '/load' do

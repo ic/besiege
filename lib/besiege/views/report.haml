@@ -1,3 +1,7 @@
-= @url
-%hr
+%h2= @url
 = @report
+%hr
+%form{action: '/load', method: :post}
+  %input{type: :hidden, name: :url, value: @url}
+  %input{type: :submit, value: 'Reload'}
+
