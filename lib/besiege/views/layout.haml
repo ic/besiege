@@ -8,6 +8,6 @@
     %h1
       Report
     %form{action: '/load', method: :post}
-      %input{type: :text, name: :url}
+      %input{type: :text, name: :url, placeholder: 'E.g. www.mozilla.org'}
       %input{type: :submit, value: 'Test'}
     = yield
