@@ -30,7 +30,7 @@ module Besiege
     def siege(url_string)
       url = ensure_protocol(url_string)
       response = []
-      Open3.popen3("siege -r10 -b -i -c50 -l/tmp/siege.log #{url}") do |sin, sout, serr, thr|
+      Open3.popen3("siege --reps 10 --benchmark --internet --concurrent 50 -l/tmp/siege.log #{url}") do |sin, sout, serr, thr|
         status = thr.value
         lines = serr.readlines
         response.concat(lines[5..-1].map{|l| l.chomp + '<br />'})
